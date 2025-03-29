@@ -1,0 +1,120 @@
+body{
+    background-image: url("Images/Website\ background.png");
+    padding: 0px;
+    margin: 0px;
+    font-size: large;
+    height: 1500px;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    padding: 15px;  
+    margin: 30px;
+    font-size: x-large;
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: white;
+} 
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:hover{  
+    color:rgb(206, 206, 206);
+}
+
+div.info p {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: large ;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+}
+
+.info_1{
+    background-color: #f5f5f5;
+    opacity: .8;
+    width: 25em;
+    height: 15em;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+}
+
+.info_2{
+    background-color: #f5f5f5;
+    opacity: .8;
+    width: 25em;
+    height: 15em;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+}
+
+.download{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    margin-bottom: -550px;
+    margin-left: 20px;
+    color: white;
+}
