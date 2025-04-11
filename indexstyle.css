@@ -32,7 +32,13 @@ body{
     color: white;
     text-decoration: none;
     transition: all 0.3s;
+    margin-left: -8rem;
 } 
+
+.logo{ 
+    margin: auto;
+    margin-left: 3rem;
+}
 
 .nav:hover{  
     color:rgb(103, 182, 255);
