@@ -1376,24 +1376,24 @@
                     var month = day * 30;
                     if (number < month) {
                       var days = Math.round(number / day);
-                      return getNumberWords(days) + " Days";
+                      return getNumberWords(days) + " days";
                     }
                     var year = day * 365;
                     if (number < year) {
                       var months = Math.round(number / month);
-                      return getNumberWords(months) + " Months";
+                      return getNumberWords(months) + " months";
                     }
                     var century = year * 100;
                     if (number < century * 10) {
                       var years = Math.round(number / year);
-                      return getNumberWords(years) + " Years";
+                      return getNumberWords(years) + " years";
                     }
                     if (number < century * 100) {
                       var centuries = Math.round(number / century);
-                      return getNumberWords(centuries) + " Centuries";
+                      return getNumberWords(centuries) + " centuries";
                     }
                     var years = Math.round(number / year);
-                    return getNumberWords(years) + " Years";
+                    return getNumberWords(years) + " years";
                   }
       
                   // Comes before ^^^ to tell how many
@@ -1511,24 +1511,21 @@
                   }
       
             </script>
-              <div id="container">
-                  <span style="float: right; font-size: 13px">
-                    <label for="showhide">Show password: </label>
-                    <input class="password_shower" type="checkbox" id="showhide" onclick="toggleShowHide(this)">
-                  </span>
-                  
-                  <div id="complexity">
-                    <input type="password" id="password_input_box" onkeyup="checkThisPassword(this.value);" placeholder="Type a password" value="">
-                    <span id="complexity-span">No Password</span>
-                  </div>
-                  
-                  <div class="result"> 
-                    Estimated time to crack your password: 
-                    <span class="result" id="first_estimate"> 
-                      <h1>Enter a password</h1> 
-                    </span>
-                  </div>
-              </div>
+            <div id="complexity">
+              <input type="password" id="password_input_box" onkeyup="checkThisPassword(this.value);" placeholder="Type a password" value="">
+
+              <span class="check-text">
+                <label class="pass_showhide" for="showhide">Show password: </label>
+                <input type="checkbox" id="showhide" onclick="toggleShowHide(this)">
+              </span>
+            </div>
+
+            <div class="result"> 
+              Estimated time to crack your password: 
+              <span class="result" id="first_estimate"> 
+                <p class="result">Enter a password</p> 
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -1537,7 +1534,7 @@
 
 
   <footer>
-    <p>©2025 Copyright Please Input Nonsense. All rights reserved.</p>
+    <p>&copy; 2025 Copyright Please Input Nonsense. All rights reserved.</p>
   </footer>
   </body>
 
