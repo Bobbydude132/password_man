@@ -246,3 +246,11 @@ footer{
     }
 }
 
+.temp{
+    display: flex;
+    width: 10rem;
+    height: 13rem;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 47rem;
+}
