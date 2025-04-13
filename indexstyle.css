@@ -142,7 +142,7 @@ footer{
 
 .result{
     display: flex;
-    font-size: large;
+    font-size: x-large;
     flex-direction: column;
     margin-top: .2rem;
 }
