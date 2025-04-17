@@ -1,0 +1,17 @@
+.survey{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.survey_p{
+    font-size: 3rem; 
+    color: rgb(255, 255, 255);
+}
+
+.survey > a{ 
+    font-size: 4rem; 
+    color: rgb(255, 255, 255);
+}

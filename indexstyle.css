@@ -151,12 +151,6 @@ button:active {
     margin-top:20px;
 }
 
-
-
-
-
-
-
 footer{
     display: flex;
     color: white;
@@ -233,7 +227,7 @@ footer{
         flex-direction: column;
         margin-top: 12rem;
         padding: 1.4rem;
-        height: 3rem;
+        height: 6rem;
     }
 }
 
@@ -314,6 +308,8 @@ footer{
         margin: auto;
         margin-bottom: 1rem;
         padding: .3rem;
+        height: 50rem;
+        width: 22rem;
     }
     
 }
