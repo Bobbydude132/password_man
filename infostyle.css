@@ -51,3 +51,10 @@ img {
 }
 
 
+@media (max-width: 375px) {
+    img{
+        width: 18rem;
+        height: 12rem;
+    }
+    
+}
