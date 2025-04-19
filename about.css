@@ -4,25 +4,12 @@
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   will-change: opacity, transform;
 }
+
 .fade-in-section.visible {
   opacity: 1;
   transform: none;
 }
 
-.titleheader {
-    display: flex;
-    width:100%;
-    height:150px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-    margin-top:20px;
-    margin-bottom:20px;
-}
-.titleheader h1 {
-    color:white;
-    font-size: 100px;
-}
 .maintextwrapper {
     display:flex;
     justify-content: center;
@@ -46,6 +33,7 @@
 }
 
 .aboutrows {
+    color: black;
     width:96%;
     height:100%;
     background-color: rgba(240, 248, 255, 0.5);
@@ -91,4 +79,12 @@
     align-items: center;
     flex-direction: column;
     padding:42px;
+}
+
+
+@media (max-width: 375px){
+    .a-row > .rowtext{
+        display: flex;
+        flex-direction: column;
+    }
 }

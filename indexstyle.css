@@ -1,11 +1,13 @@
 body{
-    background-image: url("Images/Website_background.png");
+    background: url("Images/Website_background.png") no-repeat;
+    background-color: rgb(7, 8, 44);
     padding: 0;
     margin: 0;
-    font-size: large;
-    height: 90rem;
+    font-size: 1.25rem;
     font-family: 'Inter', sans-serif;
+    color: white;
 }
+
 
 .content{
     min-height: 90rem;
@@ -13,41 +15,39 @@ body{
 }
 
 .icon{
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
     justify-content: center;
+}
+
+.logo{ 
+    margin: auto;
+    margin-left: 5rem;
+    margin-top: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
 }
 
 .navbar{
     display: flex;
     flex-direction: row;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin: auto;
 }
 
 .nav {
     padding: 1rem;  
     margin: auto;
     margin-top: 2.2rem;
+    margin-left: -8rem;
     font-size: 2rem;
     border-radius: 1rem;
-    color: white;
     text-decoration: none;
-    transition: all 0.3s;
-    margin-left: -8rem;
+    transition: transform 0.3s ease, color 0.2s ease;
+    color: white;
 } 
-
-
-.logo{ 
-    margin: auto;
-    margin-left: 3rem;
-    transition: all 0.2s ease;
-    
-}
-
-.logo:hover{
-    transform: scale(1.1);
-}
 
 .nav:hover{  
     color:rgb(103, 182, 255);
@@ -55,29 +55,36 @@ body{
     background-color: white;    
 }
 
-.info {
+.title{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.text-flex{
     margin: auto;
     display: flex;
     flex-direction: row;
     margin-top: 12rem;
-    padding: 1.4rem;
-    height: 3rem;
 }
 
-.info_1{
+.info{
+    line-height: 1.5;
     font-size: 1.6rem;
     background-color: #f5f5f5c0;
     opacity: .8;
-    width: 28em;
-    height: 15em;
-    border-radius: 1.2rem;
-    border-style: solid;
-    border-width: .3rem;
-    border-color: rgb(255, 255, 255);
+    width: 40%;
+    max-height: 30rem;
+    border: .3rem solid rgb(255, 255, 255);
+    border-radius: 1.3rem;
     text-align: center;
     margin: auto;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem;
+    color: black;
 }
+
 
 #complexity{
     display: flex;
@@ -86,91 +93,50 @@ body{
     align-items: center;
 }
 
-.title{
-    color: white;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 50px;
-    color: white;
-}
-
-
 button {
-    padding: 1.3em 3em;
-    letter-spacing: 2px;
+    background-color: white;
+    padding: 2em 4rem;
+    letter-spacing: 2.2px;
     color: #000;
-    background-color: #fff;
     border: none;
     border-radius: 10rem;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease 0s;
+    transition: transform 0.2s ease, background-color 0.3s ease;
     cursor: pointer;
     margin: auto;
     margin-top: 6rem;
 }
 
 button:hover {
-    background-color: #23c483;
+    background-color: #67d7eb;
     box-shadow: 2px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
+    color: white;
     transform: scale(1.1)
 }
 
 button:active {
     transform: scale(.9);
     box-shadow: 2px 15px 70px rgba(46, 229, 157, 0.4);
+    background-color: #50aab9;
 }
 
-.button-link{
-    display: none;
-}
-
-
-.section-heading {
-    width:100%;
-    text-align:center;
-    margin:auto;
-    background-color: rgba(240, 248, 255, 0.5);
-    border: .3rem solid aliceblue;
-    border-radius:40px;
-    margin-top:100px;
-    font-size:x-large;
-}
-
-
-.feature-section {
-    font-size:x-large;
-    width:100%;
-    text-align:center;
-    margin:auto;
-    background-color: rgba(240, 248, 255, 0.5);
-    border: .3rem solid aliceblue;
-    border-radius:40px;
-    margin-top:20px;
-}
-
-footer{
+footer, footer p{
     display: flex;
-    color: white;
     bottom: 0;
     width: 95%;
     padding: .3rem;
     justify-content: center;
-}
-
-.pass_showhide{
-    font-size: large;
+    text-align: center;
 }
 
 .check-text{
-    margin-bottom: .5rem;
+    margin-bottom: .8rem;
+    font-size: 1rem;
 }
 
 .result{
     display: flex;
-    font-size: x-large;
+    font-size: 1.5rem;
     flex-direction: column;
     margin-top: .2rem;
 }
@@ -186,6 +152,7 @@ footer{
 
 #password_input_box::placeholder{
     text-align: center;
+    font-style: italic;
 }
 
 #password_input_box:focus{
@@ -195,18 +162,21 @@ footer{
     outline: none;
 }
 
-#first_estimate.result{
-    margin-top: none;
-}
-
 .anim{
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
 .anim.load{
     opacity: 1;
     transform: none;
+}
+
+summary {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 @media (max-width: 425px) {
@@ -218,61 +188,46 @@ footer{
         font-size: large;
         height: 188rem;
     }
-}
 
-@media (max-width: 425px) {
     .navbar {
         display: flex;
         flex-direction: column;
         margin-left: 3rem;
         margin-right: 3rem;
     }
-}
 
-@media (max-width: 425px) {
     .nav {
         padding: 1rem;  
         margin: auto;
         margin-top: 2.2rem;
         font-size: 2rem;
         border-radius: 1rem;
-        color: white;
         text-decoration: none;
         transition: all 0.3s;
     }
-}
 
-@media (max-width: 425px) {
     .icon{
         width: 7rem;
         height: 7rem;
         margin: auto;
     }
-}
 
-@media (max-width: 425px) {
     .logo{ 
         margin: auto;
         transition: all 0.2s ease;
         display: flex;
         justify-content: center;
     }
-}
 
-@media (max-width: 425px) {
     .title{
-        color: white;
         margin: auto;
         display: flex;
         flex-direction: column;
         text-align: center;
         font-size: 1.5rem;
-        color: white;
     }
-}
 
-@media (max-width: 425px) {
-    .info_1{
+    .info{
         background-color: #f5f5f5c0;
         opacity: .8;
         width: 12em;
@@ -287,27 +242,12 @@ footer{
         height: 50rem;
         width: 22rem;
     }
-    
-}
 
-@media (max-width: 425px) {
     .content{
         min-height: 182rem;
         flex: 1;
     }
-}
 
-.temp{
-    display: flex;
-    width: 10rem;
-    height: 13rem;
-    flex-direction: column;
-    margin: auto;
-    margin-left: 47rem;
-}
-
-
-@media (max-width: 425px) {
     .info {
         margin: auto;
         display: flex;
@@ -317,8 +257,6 @@ footer{
         height: 6rem;
     }
 }
-
-
 
 @media (max-width: 375px) {
     .info {
@@ -330,10 +268,7 @@ footer{
         padding: 1.4rem;
         height: 6rem;
     }
-    
-}
 
-@media (max-width: 375px) {
     .info_1{
         background-color: #f5f5f5c0;
         opacity: .8;
