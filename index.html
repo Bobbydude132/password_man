@@ -3,21 +3,21 @@
   <head>
     <title>Please Input Nonsense</title>
     <link rel="stylesheet" href="indexstyle.css">
-    <script src="index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    
     <div class="content">
+
+      <a class="logo" href="index.html"><img class="icon" src="Images/Logo2.png" alt="Icon"></a>
       <div class="navbar">
-        <a class="logo" href="index.html"><img class="icon" src="Images/Logo.png" alt="Icon"></a>
         <a class="nav" href="Index.html">Home</a>
         <a class="nav" href="Information.html">Information</a>
         <a class="nav" href="Aboutus.html">About Us</a>
         <a class="nav" href="survey.html">Survey</a>
       </div>
 
+      
       <div class="title anim">
         <h1>Password Manager Download</h1>
         <p>Keep your passwords secure and all in one place</p>
@@ -1447,7 +1447,7 @@
                     var timetocrack = Math.min(Math.max(checked.crack_time, 0), 31000000000000000000000); 
                     var strength = checked.score;
                     var timeinwords = toWords(timetocrack);
-                    document.getElementById("first_estimate").innerHTML = "<h1>" + timeinwords + "</h1>";
+                    document.getElementById("first_estimate").innerHTML = timeinwords;
                     if (password == "") strength = 5;
                     displayStrength(strength);
                     getCharacterSetOf(password);
@@ -1479,39 +1479,6 @@
                     res["type"] = type;
                     return res;
                   }
-                  // Depending on password strength, changes text and color of input box
-                  function displayStrength(c) {
-                    var strength = "";
-                    var color = "";
-                    if (c == 0) {
-                      strength = "Very Weak";
-                      color = "e40808";
-                    }
-                    if (c == 1) {
-                      strength = "Weak";
-                      color = "eea900";
-                    }
-                    if (c == 2) {
-                      strength = "Medium";
-                      color = "ffd800";
-                    }
-                    if (c == 3) {
-                      strength = "Strong";
-                      color = "4fc94b ";
-                    }
-                    if (c == 4) {
-                      strength= "Very Strong";
-                      color = "00b90b";
-                    }
-                    if (c == 5) {
-                      strength = "No Password";
-                      color = "858585";
-                    }
-                    document.getElementById("complexity-span").innerHTML = strength;
-                    document.getElementById(
-                      "complexity"
-                    ).style.backgroundColor = "#" + color;
-                  }
       
             </script>
             <div id="complexity">
@@ -1525,9 +1492,7 @@
 
             <div class="result"> 
               Estimated time to crack your password: 
-              <span class="result" id="first_estimate"> 
-                <h3 class="result">Enter a password</h3> 
-              </span>
+              <span class="result" id="first_estimate" style="font-weight: bold;"><p class="result">Enter a password</p></span>
             </div>
           
           </div>
@@ -1541,6 +1506,7 @@
   <footer>
     <p>&copy; 2025 Copyright Please Input Nonsense. All rights reserved.</p>
   </footer>
-  </body>
 
+  <script src="index.js"></script>
+  </body>
 </html>
